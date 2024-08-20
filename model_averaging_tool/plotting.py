@@ -116,7 +116,7 @@ def plot_cpa(cpa_table, image_format='png'):
         # CPA Plot
         fig, ax = plt.subplots(figsize=(12, 5))
         error_cpa_lower = abs(cpa_table['cpa_wtd_avg'] - cpa_table['cpa_ci95_lo'])
-	error_cpa_upper = abs(cpa_table['cpa_ci95_hi'] - cpa_table['cpa_wtd_avg'])
+        error_cpa_upper = abs(cpa_table['cpa_ci95_hi'] - cpa_table['cpa_wtd_avg'])
         error_cpa = [error_cpa_lower, error_cpa_upper]
 
         cpa_table.plot(x='rn', y='cpa_wtd_avg', kind='barh', ax=ax, xerr=error_cpa, capsize=4, label='CPA')
@@ -130,6 +130,7 @@ def plot_cpa(cpa_table, image_format='png'):
         plt.tight_layout()
         plt.show()
         fig.savefig(f'CPA_graph.{image_format}')
+
 
 def plot_effect_vs_paid_media_spends(best_model_data, paid_media_spends, solID_min_nrmse, image_format='png'):
     """
