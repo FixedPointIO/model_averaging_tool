@@ -13,30 +13,13 @@ The Model Averaging Tool is a Python library designed to facilitate model averag
 - Generate various plots for visualizing results.
 - Configurable settings for data processing and plotting.
 
-## Installation
+## Installation (Colab)
 
 To install the library, clone the repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/yourusername/model_averaging_tool.git
-cd model_averaging_tool
-pip install -r requirements.txt
-```
+!pip install -q git+https://github.com/FixedPointIO/model_averaging_tool.git
 
-## Usage
-
-### Example Usage in Google Colab
-
-Here's an example of how to use the Model Averaging Tool in a Jupyter notebook on Google Colab:
-
-#### Clone the Repository and Install Dependencies
-
-First, clone the repository and install the required dependencies:
-
-```bash
-!git clone https://github.com/yourusername/model_averaging_tool.git
-%cd model_averaging_tool
-!pip install -r requirements.txt
 ```
 
 #### Import the Library and Load Data
