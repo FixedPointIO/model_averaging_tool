@@ -5,7 +5,7 @@ setup(
     version='0.1.0',
     description='A Python library for model averaging, data processing, and visualization.',
     author='Your Name',
-    author_email='your.email@example.com',
+    author_email='charles.shaw@tandpgroup.com.com',
     url='https://github.com/FixedPointIO/model_averaging_tool',
     packages=find_packages(),
     include_package_data=True,
