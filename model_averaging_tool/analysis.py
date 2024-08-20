@@ -58,6 +58,16 @@ def compute_contributions(decomp_table, total_spend_df, sample_size):
     # Replace NaN in 'Total Spend' with 0
     decompplusspend_table['Total Spend'].fillna(0, inplace=True)
     
+    # Calculate totals for weighted average, ci95_lo, and ci95_hi
+    total_wtd_avg = decompplusspend_table['wtd_avg'].sum()
+    total_ci95_lo = decompplusspend_table['ci95_lo'].sum()
+    total_ci95_hi = decompplusspend_table['ci95_hi'].sum()
+    
+    # Calculate the share of each variable
+    decompplusspend_table['wtd_avg_share'] = (decompplusspend_table['wtd_avg'] / total_wtd_avg) * 100
+    decompplusspend_table['ci95_lo_share'] = (decompplusspend_table['ci95_lo'] / total_ci95_lo) * 100
+    decompplusspend_table['ci95_hi_share'] = (decompplusspend_table['ci95_hi'] / total_ci95_hi) * 100
+    
     return decompplusspend_table
 
 def calculate_cpa(decompplusspend_table):
