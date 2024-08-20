@@ -178,14 +178,7 @@ DATA_PROCESSING_CONFIG = {
 
 ## Example Jupyter Notebook
 
-You can also create a Jupyter notebook in Google Colab to demonstrate the usage of the library. Here's an example of what the notebook might look like:
-
-```markdown
-# Model Averaging Tool - Example Usage
-
-This notebook demonstrates how to use the Model Averaging Tool library for model averaging, data processing, and visualization.
-
-## Setup
+You can also create a Jupyter notebook in Google Colab to demonstrate the usage of the library. Here's an example of what the notebook might look like.
 
 First, clone the repository and install the required dependencies:
 
